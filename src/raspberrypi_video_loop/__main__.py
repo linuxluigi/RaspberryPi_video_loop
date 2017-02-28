@@ -35,7 +35,7 @@ def main(args=None):
         ts = time.time()
         current_time = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
         print("Start new playlist @ " + current_time)
-        play()
+        print(play())
 
 
 if __name__ == '__main__':

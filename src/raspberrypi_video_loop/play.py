@@ -24,6 +24,7 @@ def play():
             player = OMXPlayer(video)
             player.play()
             player.quit()
+        return "Playlist end"
     else:
-        print("There is no valid video in " + video_path)
+        return "There is no valid video in " + video_path
         sleep(5)
