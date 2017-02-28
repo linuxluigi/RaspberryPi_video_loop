@@ -87,7 +87,7 @@ systemctl --user start resilio-sync
 
 ```bash
 sudo apt-get install python-dbus
-pip install git+git://github.com/linuxluigi/RaspberryPi_video_loop.git
+sudo pip install git+git://github.com/linuxluigi/RaspberryPi_video_loop.git
 ```
 
 ## create a config
