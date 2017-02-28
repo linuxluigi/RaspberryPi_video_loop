@@ -1,5 +1,6 @@
 import argparse
 import raspberrypi_video_loop
+from  raspberrypi_video_loop.play import play
 from raspberrypi_video_loop import __version__
 
 import datetime
@@ -34,6 +35,7 @@ def main(args=None):
         ts = time.time()
         current_time = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
         print("Start new playlist @ " + current_time)
+        play()
 
 
 if __name__ == '__main__':

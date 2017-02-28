@@ -5,7 +5,7 @@ from omxplayer import OMXPlayer
 from time import sleep
 
 
-def start():
+def play():
     '''
         start the programm
         Returns:

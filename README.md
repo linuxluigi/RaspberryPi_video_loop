@@ -105,12 +105,12 @@ sudo sh -c "echo 'dir = /Path/to/Your/dir!/' >> /etc/RaspberryPi_video_loop.conf
 sudo nano /etc/rc.local
 ```
 
-Add before ```exit 0``` the start script ```/bin/sleep 15  && /usr/local/bin/RaspberryPi_video_loop &```
+Add before ```exit 0``` the start script ```/bin/sleep 15  && /usr/local/lib/python2.7/dist-packages/raspberrypi_video_loop &```
 
 To test if the script is working fine reboot your pi ```sudo reboot``` and use 
 ```ps -ef | grep python``` witch will print something like:
 
 ```bash
 pi@raspberrypi ps -ef | grep python
-root      2055     1 10 13:47 ?        00:00:01 python /usr/local/bin/RaspberryPi_video_loop
+root      2055     1 10 13:47 ?        00:00:01 python /usr/local/lib/python2.7/dist-packages/raspberrypi_video_loop
 ```
